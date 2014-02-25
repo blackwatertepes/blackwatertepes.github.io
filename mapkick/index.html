@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mapkick</title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="nIh1BIozDRqF7l3RzEmiRkN3Yk9CfRPaUxlVRWJ/E80=" name="csrf-token" />
+</head>
+<body>
+
+<h3>Without data</h3>
+<div class='map'>
+  				<div id="map_1" style='position: relative;'></div>
+  				<script type="text/javascript">
+  					$(function(){
+  						var map_map_1 = new Datamap({
+  							element: document.getElementById("map_1")
+  							, scope: 'world'
+  							, projection: 'equirectangular'
+  							, fills: {defaultFill: '#ccc'}
+  							, data: {
+  								
+  							}
+  							, done: function(datamap) {
+  								
+  							}
+  							, geographyConfig: {
+  								popupTemplate: function(geo, data) {
+  									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+  								}
+  								, hideAntarctica: true
+  								, borderWidth: 1
+  								, borderColor: '#FDFDFD'
+  								, popupOnHover: true
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  							}
+  						})
+  
+  						var bubbles_map_1 = []
+  						if (bubbles_map_1.length > 0) {
+  							map_map_1.bubbles(bubbles_map_1, {
+  								popupTemplate: function (geo, data) { 
+  									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+  								}
+  								, borderWidth: 2
+  								, borderColor: '#FFFFFF'
+  								, popupOnHover: true
+  								, fillOpacity: 0.75
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  								, highlightFillOpacity: 0.85
+  							})
+  						}
+  
+  						if (false){
+  							map_map_1.legend()
+  						}
+  					})
+  				</script>
+</div>
+<div class='map'>
+  				<div id="map_2" style='position: relative;'></div>
+  				<script type="text/javascript">
+  					$(function(){
+  						var map_map_2 = new Datamap({
+  							element: document.getElementById("map_2")
+  							, scope: 'usa'
+  							, projection: 'equirectangular'
+  							, fills: {defaultFill: '#ccc'}
+  							, data: {
+  								
+  							}
+  							, done: function(datamap) {
+  								
+  							}
+  							, geographyConfig: {
+  								popupTemplate: function(geo, data) {
+  									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+  								}
+  								, hideAntarctica: true
+  								, borderWidth: 1
+  								, borderColor: '#FDFDFD'
+  								, popupOnHover: true
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  							}
+  						})
+  
+  						var bubbles_map_2 = []
+  						if (bubbles_map_2.length > 0) {
+  							map_map_2.bubbles(bubbles_map_2, {
+  								popupTemplate: function (geo, data) { 
+  									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+  								}
+  								, borderWidth: 2
+  								, borderColor: '#FFFFFF'
+  								, popupOnHover: true
+  								, fillOpacity: 0.75
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  								, highlightFillOpacity: 0.85
+  							})
+  						}
+  
+  						if (false){
+  							map_map_2.legend()
+  						}
+  					})
+  				</script>
+</div>
+<h3>With data, no options</h3>
+<div class='map'>
+  				<div id="map_3" style='position: relative;'></div>
+  				<script type="text/javascript">
+  					$(function(){
+  						var map_map_3 = new Datamap({
+  							element: document.getElementById("map_3")
+  							, scope: 'world'
+  							, projection: 'equirectangular'
+  							, fills: {defaultFill: '#ccc','1 - 2': '#fcc','3 - 4': '#f99','5 - 6': '#f66','7 - 8': '#f33','9 - 11': '#f00'}
+  							, data: {
+  								ABW: {fillKey: '3 - 4', numberOfThings: 3},AFG: {fillKey: '3 - 4', numberOfThings: 3},AGO: {fillKey: '1 - 2', numberOfThings: 2},AIA: {fillKey: '1 - 2', numberOfThings: 2},ALA: {fillKey: '5 - 6', numberOfThings: 6},ALB: {fillKey: '1 - 2', numberOfThings: 2},AND: {fillKey: '3 - 4', numberOfThings: 3},ARE: {fillKey: '3 - 4', numberOfThings: 4},ARG: {fillKey: '3 - 4', numberOfThings: 3},ARM: {fillKey: '5 - 6', numberOfThings: 6},ASM: {fillKey: '1 - 2', numberOfThings: 2},ATA: {fillKey: '5 - 6', numberOfThings: 5},ATF: {fillKey: '3 - 4', numberOfThings: 3},ATG: {fillKey: '3 - 4', numberOfThings: 3},AUS: {fillKey: '5 - 6', numberOfThings: 5},AUT: {fillKey: '1 - 2', numberOfThings: 1},AZE: {fillKey: '1 - 2', numberOfThings: 1},BDI: {fillKey: '1 - 2', numberOfThings: 2},BEL: {fillKey: '1 - 2', numberOfThings: 2},BEN: {fillKey: '5 - 6', numberOfThings: 6},BES: {fillKey: '1 - 2', numberOfThings: 1},BFA: {fillKey: '1 - 2', numberOfThings: 2},BGD: {fillKey: '5 - 6', numberOfThings: 5},BGR: {fillKey: '5 - 6', numberOfThings: 5},BHR: {fillKey: '1 - 2', numberOfThings: 1},BHS: {fillKey: '3 - 4', numberOfThings: 4},BIH: {fillKey: '5 - 6', numberOfThings: 5},BLM: {fillKey: '7 - 8', numberOfThings: 7},BLR: {fillKey: '3 - 4', numberOfThings: 3},BLZ: {fillKey: '3 - 4', numberOfThings: 4},BMU: {fillKey: '3 - 4', numberOfThings: 4},BOL: {fillKey: '1 - 2', numberOfThings: 2},BRA: {fillKey: '3 - 4', numberOfThings: 4},BRB: {fillKey: '1 - 2', numberOfThings: 2},BRN: {fillKey: '5 - 6', numberOfThings: 5},BTN: {fillKey: '5 - 6', numberOfThings: 5},BVT: {fillKey: '3 - 4', numberOfThings: 4},BWA: {fillKey: '1 - 2', numberOfThings: 1},CAF: {fillKey: '3 - 4', numberOfThings: 3},CAN: {fillKey: '1 - 2', numberOfThings: 1},CCK: {fillKey: '5 - 6', numberOfThings: 5},CHE: {fillKey: '5 - 6', numberOfThings: 5},CHL: {fillKey: '3 - 4', numberOfThings: 4},CHN: {fillKey: '1 - 2', numberOfThings: 2},CIV: {fillKey: '1 - 2', numberOfThings: 2},CMR: {fillKey: '3 - 4', numberOfThings: 4},COD: {fillKey: '1 - 2', numberOfThings: 2},COG: {fillKey: '5 - 6', numberOfThings: 6},COK: {fillKey: '5 - 6', numberOfThings: 5},COL: {fillKey: '5 - 6', numberOfThings: 6},COM: {fillKey: '5 - 6', numberOfThings: 6},CPV: {fillKey: '7 - 8', numberOfThings: 8},CRI: {fillKey: '3 - 4', numberOfThings: 4},CUB: {fillKey: '3 - 4', numberOfThings: 4},CUW: {fillKey: '7 - 8', numberOfThings: 8},CXR: {fillKey: '3 - 4', numberOfThings: 3},CYM: {fillKey: '5 - 6', numberOfThings: 6},CYP: {fillKey: '3 - 4', numberOfThings: 3},CZE: {fillKey: '7 - 8', numberOfThings: 8},DEU: {fillKey: '1 - 2', numberOfThings: 2},DJI: {fillKey: '7 - 8', numberOfThings: 7},DMA: {fillKey: '5 - 6', numberOfThings: 5},DNK: {fillKey: '3 - 4', numberOfThings: 4},DOM: {fillKey: '1 - 2', numberOfThings: 2},DZA: {fillKey: '5 - 6', numberOfThings: 6},ECU: {fillKey: '5 - 6', numberOfThings: 6},EGY: {fillKey: '3 - 4', numberOfThings: 3},ERI: {fillKey: '3 - 4', numberOfThings: 4},ESH: {fillKey: '3 - 4', numberOfThings: 3},ESP: {fillKey: '3 - 4', numberOfThings: 3},EST: {fillKey: '5 - 6', numberOfThings: 5},ETH: {fillKey: '3 - 4', numberOfThings: 3},FIN: {fillKey: '3 - 4', numberOfThings: 3},FJI: {fillKey: '1 - 2', numberOfThings: 2},FLK: {fillKey: '5 - 6', numberOfThings: 5},FRA: {fillKey: '1 - 2', numberOfThings: 1},FRO: {fillKey: '5 - 6', numberOfThings: 5},FSM: {fillKey: '5 - 6', numberOfThings: 5},GAB: {fillKey: '3 - 4', numberOfThings: 4},GBR: {fillKey: '3 - 4', numberOfThings: 4},GEO: {fillKey: '1 - 2', numberOfThings: 1},GGY: {fillKey: '1 - 2', numberOfThings: 2},GHA: {fillKey: '5 - 6', numberOfThings: 5},GIB: {fillKey: '9 - 11', numberOfThings: 11},GIN: {fillKey: '3 - 4', numberOfThings: 3},GLP: {fillKey: '3 - 4', numberOfThings: 3},GMB: {fillKey: '5 - 6', numberOfThings: 5},GNB: {fillKey: '7 - 8', numberOfThings: 8},GNQ: {fillKey: '9 - 11', numberOfThings: 9},GRD: {fillKey: '5 - 6', numberOfThings: 6},GRL: {fillKey: '1 - 2', numberOfThings: 2},GTM: {fillKey: '5 - 6', numberOfThings: 5},GUF: {fillKey: '5 - 6', numberOfThings: 6},GUM: {fillKey: '3 - 4', numberOfThings: 4},GUY: {fillKey: '3 - 4', numberOfThings: 4},HKG: {fillKey: '3 - 4', numberOfThings: 3},HMD: {fillKey: '3 - 4', numberOfThings: 4},HND: {fillKey: '3 - 4', numberOfThings: 3},HRV: {fillKey: '5 - 6', numberOfThings: 6},HTI: {fillKey: '1 - 2', numberOfThings: 2},HUN: {fillKey: '1 - 2', numberOfThings: 1},IDN: {fillKey: '7 - 8', numberOfThings: 8},IMN: {fillKey: '5 - 6', numberOfThings: 5},IND: {fillKey: '7 - 8', numberOfThings: 8},IOT: {fillKey: '1 - 2', numberOfThings: 2},IRL: {fillKey: '3 - 4', numberOfThings: 4},IRN: {fillKey: '7 - 8', numberOfThings: 8},IRQ: {fillKey: '3 - 4', numberOfThings: 3},ISL: {fillKey: '3 - 4', numberOfThings: 4},ISR: {fillKey: '3 - 4', numberOfThings: 3},ITA: {fillKey: '1 - 2', numberOfThings: 2},JAM: {fillKey: '9 - 11', numberOfThings: 9},JEY: {fillKey: '5 - 6', numberOfThings: 6},JOR: {fillKey: '3 - 4', numberOfThings: 4},JPN: {fillKey: '5 - 6', numberOfThings: 5},KAZ: {fillKey: '5 - 6', numberOfThings: 6},KEN: {fillKey: '3 - 4', numberOfThings: 3},KGZ: {fillKey: '5 - 6', numberOfThings: 6},KHM: {fillKey: '5 - 6', numberOfThings: 6},KIR: {fillKey: '1 - 2', numberOfThings: 2},KNA: {fillKey: '1 - 2', numberOfThings: 2},KOR: {fillKey: '3 - 4', numberOfThings: 4},KWT: {fillKey: '3 - 4', numberOfThings: 4},LAO: {fillKey: '3 - 4', numberOfThings: 4},LBN: {fillKey: '3 - 4', numberOfThings: 4},LBR: {fillKey: '1 - 2', numberOfThings: 1},LBY: {fillKey: '5 - 6', numberOfThings: 5},LCA: {fillKey: '3 - 4', numberOfThings: 3},LIE: {fillKey: '3 - 4', numberOfThings: 4},LKA: {fillKey: '3 - 4', numberOfThings: 4},LSO: {fillKey: '7 - 8', numberOfThings: 8},LTU: {fillKey: '3 - 4', numberOfThings: 4},LUX: {fillKey: '1 - 2', numberOfThings: 2},LVA: {fillKey: '1 - 2', numberOfThings: 2},MAC: {fillKey: '5 - 6', numberOfThings: 5},MAF: {fillKey: '1 - 2', numberOfThings: 2},MAR: {fillKey: '1 - 2', numberOfThings: 2},MCO: {fillKey: '5 - 6', numberOfThings: 5},MDA: {fillKey: '7 - 8', numberOfThings: 7},MDG: {fillKey: '5 - 6', numberOfThings: 5},MDV: {fillKey: '9 - 11', numberOfThings: 9},MEX: {fillKey: '3 - 4', numberOfThings: 3},MHL: {fillKey: '7 - 8', numberOfThings: 7},MKD: {fillKey: '3 - 4', numberOfThings: 4},MLI: {fillKey: '3 - 4', numberOfThings: 3},MLT: {fillKey: '5 - 6', numberOfThings: 5},MMR: {fillKey: '3 - 4', numberOfThings: 3},MNE: {fillKey: '5 - 6', numberOfThings: 6},MNG: {fillKey: '5 - 6', numberOfThings: 5},MNP: {fillKey: '3 - 4', numberOfThings: 3},MOZ: {fillKey: '5 - 6', numberOfThings: 5},MRT: {fillKey: '1 - 2', numberOfThings: 2},MSR: {fillKey: '3 - 4', numberOfThings: 4},MTQ: {fillKey: '1 - 2', numberOfThings: 2},MUS: {fillKey: '7 - 8', numberOfThings: 7},MWI: {fillKey: '3 - 4', numberOfThings: 3},MYS: {fillKey: '3 - 4', numberOfThings: 4},MYT: {fillKey: '1 - 2', numberOfThings: 1},NAM: {fillKey: '3 - 4', numberOfThings: 3},NCL: {fillKey: '3 - 4', numberOfThings: 3},NER: {fillKey: '1 - 2', numberOfThings: 2},NFK: {fillKey: '5 - 6', numberOfThings: 5},NGA: {fillKey: '5 - 6', numberOfThings: 6},NIC: {fillKey: '1 - 2', numberOfThings: 1},NIU: {fillKey: '5 - 6', numberOfThings: 6},NLD: {fillKey: '3 - 4', numberOfThings: 4},NOR: {fillKey: '1 - 2', numberOfThings: 2},NPL: {fillKey: '7 - 8', numberOfThings: 8},NRU: {fillKey: '5 - 6', numberOfThings: 5},NZL: {fillKey: '3 - 4', numberOfThings: 4},OMN: {fillKey: '1 - 2', numberOfThings: 2},PAK: {fillKey: '1 - 2', numberOfThings: 2},PAN: {fillKey: '3 - 4', numberOfThings: 4},PCN: {fillKey: '9 - 11', numberOfThings: 10},PER: {fillKey: '5 - 6', numberOfThings: 5},PHL: {fillKey: '3 - 4', numberOfThings: 4},PLW: {fillKey: '1 - 2', numberOfThings: 1},PNG: {fillKey: '3 - 4', numberOfThings: 4},POL: {fillKey: '7 - 8', numberOfThings: 8},PRI: {fillKey: '3 - 4', numberOfThings: 4},PRK: {fillKey: '3 - 4', numberOfThings: 4},PRT: {fillKey: '1 - 2', numberOfThings: 2},PRY: {fillKey: '5 - 6', numberOfThings: 6},PSE: {fillKey: '3 - 4', numberOfThings: 4},PYF: {fillKey: '1 - 2', numberOfThings: 1},QAT: {fillKey: '5 - 6', numberOfThings: 5},REU: {fillKey: '3 - 4', numberOfThings: 3},ROU: {fillKey: '5 - 6', numberOfThings: 5},RUS: {fillKey: '1 - 2', numberOfThings: 2},RWA: {fillKey: '3 - 4', numberOfThings: 4},SAU: {fillKey: '3 - 4', numberOfThings: 3},SDN: {fillKey: '5 - 6', numberOfThings: 6},SEN: {fillKey: '1 - 2', numberOfThings: 1},SGP: {fillKey: '3 - 4', numberOfThings: 3},SGS: {fillKey: '5 - 6', numberOfThings: 6},SHN: {fillKey: '3 - 4', numberOfThings: 3},SJM: {fillKey: '3 - 4', numberOfThings: 4},SLB: {fillKey: '3 - 4', numberOfThings: 4},SLE: {fillKey: '3 - 4', numberOfThings: 3},SLV: {fillKey: '1 - 2', numberOfThings: 2},SMR: {fillKey: '1 - 2', numberOfThings: 2},SOM: {fillKey: '5 - 6', numberOfThings: 6},SPM: {fillKey: '7 - 8', numberOfThings: 8},SRB: {fillKey: '1 - 2', numberOfThings: 1},SSD: {fillKey: '7 - 8', numberOfThings: 7},STP: {fillKey: '5 - 6', numberOfThings: 5},SUR: {fillKey: '3 - 4', numberOfThings: 3},SVK: {fillKey: '1 - 2', numberOfThings: 2},SVN: {fillKey: '3 - 4', numberOfThings: 3},SWE: {fillKey: '7 - 8', numberOfThings: 7},SWZ: {fillKey: '5 - 6', numberOfThings: 5},SXM: {fillKey: '3 - 4', numberOfThings: 3},SYC: {fillKey: '3 - 4', numberOfThings: 4},SYR: {fillKey: '7 - 8', numberOfThings: 7},TCA: {fillKey: '5 - 6', numberOfThings: 5},TCD: {fillKey: '9 - 11', numberOfThings: 9},TGO: {fillKey: '1 - 2', numberOfThings: 1},THA: {fillKey: '3 - 4', numberOfThings: 4},TJK: {fillKey: '3 - 4', numberOfThings: 3},TKL: {fillKey: '5 - 6', numberOfThings: 6},TKM: {fillKey: '5 - 6', numberOfThings: 5},TLS: {fillKey: '5 - 6', numberOfThings: 5},TON: {fillKey: '1 - 2', numberOfThings: 1},TTO: {fillKey: '3 - 4', numberOfThings: 4},TUN: {fillKey: '5 - 6', numberOfThings: 6},TUR: {fillKey: '3 - 4', numberOfThings: 3},TUV: {fillKey: '5 - 6', numberOfThings: 6},TWN: {fillKey: '1 - 2', numberOfThings: 2},TZA: {fillKey: '3 - 4', numberOfThings: 3},UGA: {fillKey: '1 - 2', numberOfThings: 1},UKR: {fillKey: '1 - 2', numberOfThings: 2},UMI: {fillKey: '3 - 4', numberOfThings: 3},URY: {fillKey: '3 - 4', numberOfThings: 3},USA: {fillKey: '5 - 6', numberOfThings: 6},UZB: {fillKey: '3 - 4', numberOfThings: 4},VAT: {fillKey: '3 - 4', numberOfThings: 4},VCT: {fillKey: '1 - 2', numberOfThings: 2},VEN: {fillKey: '3 - 4', numberOfThings: 3},VGB: {fillKey: '3 - 4', numberOfThings: 4},VIR: {fillKey: '5 - 6', numberOfThings: 5},VNM: {fillKey: '3 - 4', numberOfThings: 4},VUT: {fillKey: '1 - 2', numberOfThings: 2},WLF: {fillKey: '1 - 2', numberOfThings: 2},WSM: {fillKey: '9 - 11', numberOfThings: 9},YEM: {fillKey: '3 - 4', numberOfThings: 3},ZAF: {fillKey: '1 - 2', numberOfThings: 2},ZMB: {fillKey: '3 - 4', numberOfThings: 3},ZWE: {fillKey: '3 - 4', numberOfThings: 3}
+  							}
+  							, done: function(datamap) {
+  								
+  							}
+  							, geographyConfig: {
+  								popupTemplate: function(geo, data) {
+  									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+  								}
+  								, hideAntarctica: true
+  								, borderWidth: 1
+  								, borderColor: '#FDFDFD'
+  								, popupOnHover: true
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  							}
+  						})
+  
+  						var bubbles_map_3 = []
+  						if (bubbles_map_3.length > 0) {
+  							map_map_3.bubbles(bubbles_map_3, {
+  								popupTemplate: function (geo, data) { 
+  									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+  								}
+  								, borderWidth: 2
+  								, borderColor: '#FFFFFF'
+  								, popupOnHover: true
+  								, fillOpacity: 0.75
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  								, highlightFillOpacity: 0.85
+  							})
+  						}
+  
+  						if (false){
+  							map_map_3.legend()
+  						}
+  					})
+  				</script>
+</div>
+<div class='map'>
+  				<div id="map_4" style='position: relative;'></div>
+  				<script type="text/javascript">
+  					$(function(){
+  						var map_map_4 = new Datamap({
+  							element: document.getElementById("map_4")
+  							, scope: 'usa'
+  							, projection: 'equirectangular'
+  							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+  							, data: {
+  								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+  							}
+  							, done: function(datamap) {
+  								
+  							}
+  							, geographyConfig: {
+  								popupTemplate: function(geo, data) {
+  									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+  								}
+  								, hideAntarctica: true
+  								, borderWidth: 1
+  								, borderColor: '#FDFDFD'
+  								, popupOnHover: true
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  							}
+  						})
+  
+  						var bubbles_map_4 = []
+  						if (bubbles_map_4.length > 0) {
+  							map_map_4.bubbles(bubbles_map_4, {
+  								popupTemplate: function (geo, data) { 
+  									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+  								}
+  								, borderWidth: 2
+  								, borderColor: '#FFFFFF'
+  								, popupOnHover: true
+  								, fillOpacity: 0.75
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  								, highlightFillOpacity: 0.85
+  							})
+  						}
+  
+  						if (false){
+  							map_map_4.legend()
+  						}
+  					})
+  				</script>
+</div>
+<div class='map'>
+  <h3>Map with mercator projection</h3>
+  <div class='map'>
+    				<div id="map_5" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_5 = new Datamap({
+    							element: document.getElementById("map_5")
+    							, scope: 'world'
+    							, projection: 'mercator'
+    							, fills: {defaultFill: '#ccc','1 - 2': '#fcc','3 - 4': '#f99','5 - 6': '#f66','7 - 8': '#f33','9 - 11': '#f00'}
+    							, data: {
+    								ABW: {fillKey: '3 - 4', numberOfThings: 3},AFG: {fillKey: '3 - 4', numberOfThings: 3},AGO: {fillKey: '1 - 2', numberOfThings: 2},AIA: {fillKey: '1 - 2', numberOfThings: 2},ALA: {fillKey: '5 - 6', numberOfThings: 6},ALB: {fillKey: '1 - 2', numberOfThings: 2},AND: {fillKey: '3 - 4', numberOfThings: 3},ARE: {fillKey: '3 - 4', numberOfThings: 4},ARG: {fillKey: '3 - 4', numberOfThings: 3},ARM: {fillKey: '5 - 6', numberOfThings: 6},ASM: {fillKey: '1 - 2', numberOfThings: 2},ATA: {fillKey: '5 - 6', numberOfThings: 5},ATF: {fillKey: '3 - 4', numberOfThings: 3},ATG: {fillKey: '3 - 4', numberOfThings: 3},AUS: {fillKey: '5 - 6', numberOfThings: 5},AUT: {fillKey: '1 - 2', numberOfThings: 1},AZE: {fillKey: '1 - 2', numberOfThings: 1},BDI: {fillKey: '1 - 2', numberOfThings: 2},BEL: {fillKey: '1 - 2', numberOfThings: 2},BEN: {fillKey: '5 - 6', numberOfThings: 6},BES: {fillKey: '1 - 2', numberOfThings: 1},BFA: {fillKey: '1 - 2', numberOfThings: 2},BGD: {fillKey: '5 - 6', numberOfThings: 5},BGR: {fillKey: '5 - 6', numberOfThings: 5},BHR: {fillKey: '1 - 2', numberOfThings: 1},BHS: {fillKey: '3 - 4', numberOfThings: 4},BIH: {fillKey: '5 - 6', numberOfThings: 5},BLM: {fillKey: '7 - 8', numberOfThings: 7},BLR: {fillKey: '3 - 4', numberOfThings: 3},BLZ: {fillKey: '3 - 4', numberOfThings: 4},BMU: {fillKey: '3 - 4', numberOfThings: 4},BOL: {fillKey: '1 - 2', numberOfThings: 2},BRA: {fillKey: '3 - 4', numberOfThings: 4},BRB: {fillKey: '1 - 2', numberOfThings: 2},BRN: {fillKey: '5 - 6', numberOfThings: 5},BTN: {fillKey: '5 - 6', numberOfThings: 5},BVT: {fillKey: '3 - 4', numberOfThings: 4},BWA: {fillKey: '1 - 2', numberOfThings: 1},CAF: {fillKey: '3 - 4', numberOfThings: 3},CAN: {fillKey: '1 - 2', numberOfThings: 1},CCK: {fillKey: '5 - 6', numberOfThings: 5},CHE: {fillKey: '5 - 6', numberOfThings: 5},CHL: {fillKey: '3 - 4', numberOfThings: 4},CHN: {fillKey: '1 - 2', numberOfThings: 2},CIV: {fillKey: '1 - 2', numberOfThings: 2},CMR: {fillKey: '3 - 4', numberOfThings: 4},COD: {fillKey: '1 - 2', numberOfThings: 2},COG: {fillKey: '5 - 6', numberOfThings: 6},COK: {fillKey: '5 - 6', numberOfThings: 5},COL: {fillKey: '5 - 6', numberOfThings: 6},COM: {fillKey: '5 - 6', numberOfThings: 6},CPV: {fillKey: '7 - 8', numberOfThings: 8},CRI: {fillKey: '3 - 4', numberOfThings: 4},CUB: {fillKey: '3 - 4', numberOfThings: 4},CUW: {fillKey: '7 - 8', numberOfThings: 8},CXR: {fillKey: '3 - 4', numberOfThings: 3},CYM: {fillKey: '5 - 6', numberOfThings: 6},CYP: {fillKey: '3 - 4', numberOfThings: 3},CZE: {fillKey: '7 - 8', numberOfThings: 8},DEU: {fillKey: '1 - 2', numberOfThings: 2},DJI: {fillKey: '7 - 8', numberOfThings: 7},DMA: {fillKey: '5 - 6', numberOfThings: 5},DNK: {fillKey: '3 - 4', numberOfThings: 4},DOM: {fillKey: '1 - 2', numberOfThings: 2},DZA: {fillKey: '5 - 6', numberOfThings: 6},ECU: {fillKey: '5 - 6', numberOfThings: 6},EGY: {fillKey: '3 - 4', numberOfThings: 3},ERI: {fillKey: '3 - 4', numberOfThings: 4},ESH: {fillKey: '3 - 4', numberOfThings: 3},ESP: {fillKey: '3 - 4', numberOfThings: 3},EST: {fillKey: '5 - 6', numberOfThings: 5},ETH: {fillKey: '3 - 4', numberOfThings: 3},FIN: {fillKey: '3 - 4', numberOfThings: 3},FJI: {fillKey: '1 - 2', numberOfThings: 2},FLK: {fillKey: '5 - 6', numberOfThings: 5},FRA: {fillKey: '1 - 2', numberOfThings: 1},FRO: {fillKey: '5 - 6', numberOfThings: 5},FSM: {fillKey: '5 - 6', numberOfThings: 5},GAB: {fillKey: '3 - 4', numberOfThings: 4},GBR: {fillKey: '3 - 4', numberOfThings: 4},GEO: {fillKey: '1 - 2', numberOfThings: 1},GGY: {fillKey: '1 - 2', numberOfThings: 2},GHA: {fillKey: '5 - 6', numberOfThings: 5},GIB: {fillKey: '9 - 11', numberOfThings: 11},GIN: {fillKey: '3 - 4', numberOfThings: 3},GLP: {fillKey: '3 - 4', numberOfThings: 3},GMB: {fillKey: '5 - 6', numberOfThings: 5},GNB: {fillKey: '7 - 8', numberOfThings: 8},GNQ: {fillKey: '9 - 11', numberOfThings: 9},GRD: {fillKey: '5 - 6', numberOfThings: 6},GRL: {fillKey: '1 - 2', numberOfThings: 2},GTM: {fillKey: '5 - 6', numberOfThings: 5},GUF: {fillKey: '5 - 6', numberOfThings: 6},GUM: {fillKey: '3 - 4', numberOfThings: 4},GUY: {fillKey: '3 - 4', numberOfThings: 4},HKG: {fillKey: '3 - 4', numberOfThings: 3},HMD: {fillKey: '3 - 4', numberOfThings: 4},HND: {fillKey: '3 - 4', numberOfThings: 3},HRV: {fillKey: '5 - 6', numberOfThings: 6},HTI: {fillKey: '1 - 2', numberOfThings: 2},HUN: {fillKey: '1 - 2', numberOfThings: 1},IDN: {fillKey: '7 - 8', numberOfThings: 8},IMN: {fillKey: '5 - 6', numberOfThings: 5},IND: {fillKey: '7 - 8', numberOfThings: 8},IOT: {fillKey: '1 - 2', numberOfThings: 2},IRL: {fillKey: '3 - 4', numberOfThings: 4},IRN: {fillKey: '7 - 8', numberOfThings: 8},IRQ: {fillKey: '3 - 4', numberOfThings: 3},ISL: {fillKey: '3 - 4', numberOfThings: 4},ISR: {fillKey: '3 - 4', numberOfThings: 3},ITA: {fillKey: '1 - 2', numberOfThings: 2},JAM: {fillKey: '9 - 11', numberOfThings: 9},JEY: {fillKey: '5 - 6', numberOfThings: 6},JOR: {fillKey: '3 - 4', numberOfThings: 4},JPN: {fillKey: '5 - 6', numberOfThings: 5},KAZ: {fillKey: '5 - 6', numberOfThings: 6},KEN: {fillKey: '3 - 4', numberOfThings: 3},KGZ: {fillKey: '5 - 6', numberOfThings: 6},KHM: {fillKey: '5 - 6', numberOfThings: 6},KIR: {fillKey: '1 - 2', numberOfThings: 2},KNA: {fillKey: '1 - 2', numberOfThings: 2},KOR: {fillKey: '3 - 4', numberOfThings: 4},KWT: {fillKey: '3 - 4', numberOfThings: 4},LAO: {fillKey: '3 - 4', numberOfThings: 4},LBN: {fillKey: '3 - 4', numberOfThings: 4},LBR: {fillKey: '1 - 2', numberOfThings: 1},LBY: {fillKey: '5 - 6', numberOfThings: 5},LCA: {fillKey: '3 - 4', numberOfThings: 3},LIE: {fillKey: '3 - 4', numberOfThings: 4},LKA: {fillKey: '3 - 4', numberOfThings: 4},LSO: {fillKey: '7 - 8', numberOfThings: 8},LTU: {fillKey: '3 - 4', numberOfThings: 4},LUX: {fillKey: '1 - 2', numberOfThings: 2},LVA: {fillKey: '1 - 2', numberOfThings: 2},MAC: {fillKey: '5 - 6', numberOfThings: 5},MAF: {fillKey: '1 - 2', numberOfThings: 2},MAR: {fillKey: '1 - 2', numberOfThings: 2},MCO: {fillKey: '5 - 6', numberOfThings: 5},MDA: {fillKey: '7 - 8', numberOfThings: 7},MDG: {fillKey: '5 - 6', numberOfThings: 5},MDV: {fillKey: '9 - 11', numberOfThings: 9},MEX: {fillKey: '3 - 4', numberOfThings: 3},MHL: {fillKey: '7 - 8', numberOfThings: 7},MKD: {fillKey: '3 - 4', numberOfThings: 4},MLI: {fillKey: '3 - 4', numberOfThings: 3},MLT: {fillKey: '5 - 6', numberOfThings: 5},MMR: {fillKey: '3 - 4', numberOfThings: 3},MNE: {fillKey: '5 - 6', numberOfThings: 6},MNG: {fillKey: '5 - 6', numberOfThings: 5},MNP: {fillKey: '3 - 4', numberOfThings: 3},MOZ: {fillKey: '5 - 6', numberOfThings: 5},MRT: {fillKey: '1 - 2', numberOfThings: 2},MSR: {fillKey: '3 - 4', numberOfThings: 4},MTQ: {fillKey: '1 - 2', numberOfThings: 2},MUS: {fillKey: '7 - 8', numberOfThings: 7},MWI: {fillKey: '3 - 4', numberOfThings: 3},MYS: {fillKey: '3 - 4', numberOfThings: 4},MYT: {fillKey: '1 - 2', numberOfThings: 1},NAM: {fillKey: '3 - 4', numberOfThings: 3},NCL: {fillKey: '3 - 4', numberOfThings: 3},NER: {fillKey: '1 - 2', numberOfThings: 2},NFK: {fillKey: '5 - 6', numberOfThings: 5},NGA: {fillKey: '5 - 6', numberOfThings: 6},NIC: {fillKey: '1 - 2', numberOfThings: 1},NIU: {fillKey: '5 - 6', numberOfThings: 6},NLD: {fillKey: '3 - 4', numberOfThings: 4},NOR: {fillKey: '1 - 2', numberOfThings: 2},NPL: {fillKey: '7 - 8', numberOfThings: 8},NRU: {fillKey: '5 - 6', numberOfThings: 5},NZL: {fillKey: '3 - 4', numberOfThings: 4},OMN: {fillKey: '1 - 2', numberOfThings: 2},PAK: {fillKey: '1 - 2', numberOfThings: 2},PAN: {fillKey: '3 - 4', numberOfThings: 4},PCN: {fillKey: '9 - 11', numberOfThings: 10},PER: {fillKey: '5 - 6', numberOfThings: 5},PHL: {fillKey: '3 - 4', numberOfThings: 4},PLW: {fillKey: '1 - 2', numberOfThings: 1},PNG: {fillKey: '3 - 4', numberOfThings: 4},POL: {fillKey: '7 - 8', numberOfThings: 8},PRI: {fillKey: '3 - 4', numberOfThings: 4},PRK: {fillKey: '3 - 4', numberOfThings: 4},PRT: {fillKey: '1 - 2', numberOfThings: 2},PRY: {fillKey: '5 - 6', numberOfThings: 6},PSE: {fillKey: '3 - 4', numberOfThings: 4},PYF: {fillKey: '1 - 2', numberOfThings: 1},QAT: {fillKey: '5 - 6', numberOfThings: 5},REU: {fillKey: '3 - 4', numberOfThings: 3},ROU: {fillKey: '5 - 6', numberOfThings: 5},RUS: {fillKey: '1 - 2', numberOfThings: 2},RWA: {fillKey: '3 - 4', numberOfThings: 4},SAU: {fillKey: '3 - 4', numberOfThings: 3},SDN: {fillKey: '5 - 6', numberOfThings: 6},SEN: {fillKey: '1 - 2', numberOfThings: 1},SGP: {fillKey: '3 - 4', numberOfThings: 3},SGS: {fillKey: '5 - 6', numberOfThings: 6},SHN: {fillKey: '3 - 4', numberOfThings: 3},SJM: {fillKey: '3 - 4', numberOfThings: 4},SLB: {fillKey: '3 - 4', numberOfThings: 4},SLE: {fillKey: '3 - 4', numberOfThings: 3},SLV: {fillKey: '1 - 2', numberOfThings: 2},SMR: {fillKey: '1 - 2', numberOfThings: 2},SOM: {fillKey: '5 - 6', numberOfThings: 6},SPM: {fillKey: '7 - 8', numberOfThings: 8},SRB: {fillKey: '1 - 2', numberOfThings: 1},SSD: {fillKey: '7 - 8', numberOfThings: 7},STP: {fillKey: '5 - 6', numberOfThings: 5},SUR: {fillKey: '3 - 4', numberOfThings: 3},SVK: {fillKey: '1 - 2', numberOfThings: 2},SVN: {fillKey: '3 - 4', numberOfThings: 3},SWE: {fillKey: '7 - 8', numberOfThings: 7},SWZ: {fillKey: '5 - 6', numberOfThings: 5},SXM: {fillKey: '3 - 4', numberOfThings: 3},SYC: {fillKey: '3 - 4', numberOfThings: 4},SYR: {fillKey: '7 - 8', numberOfThings: 7},TCA: {fillKey: '5 - 6', numberOfThings: 5},TCD: {fillKey: '9 - 11', numberOfThings: 9},TGO: {fillKey: '1 - 2', numberOfThings: 1},THA: {fillKey: '3 - 4', numberOfThings: 4},TJK: {fillKey: '3 - 4', numberOfThings: 3},TKL: {fillKey: '5 - 6', numberOfThings: 6},TKM: {fillKey: '5 - 6', numberOfThings: 5},TLS: {fillKey: '5 - 6', numberOfThings: 5},TON: {fillKey: '1 - 2', numberOfThings: 1},TTO: {fillKey: '3 - 4', numberOfThings: 4},TUN: {fillKey: '5 - 6', numberOfThings: 6},TUR: {fillKey: '3 - 4', numberOfThings: 3},TUV: {fillKey: '5 - 6', numberOfThings: 6},TWN: {fillKey: '1 - 2', numberOfThings: 2},TZA: {fillKey: '3 - 4', numberOfThings: 3},UGA: {fillKey: '1 - 2', numberOfThings: 1},UKR: {fillKey: '1 - 2', numberOfThings: 2},UMI: {fillKey: '3 - 4', numberOfThings: 3},URY: {fillKey: '3 - 4', numberOfThings: 3},USA: {fillKey: '5 - 6', numberOfThings: 6},UZB: {fillKey: '3 - 4', numberOfThings: 4},VAT: {fillKey: '3 - 4', numberOfThings: 4},VCT: {fillKey: '1 - 2', numberOfThings: 2},VEN: {fillKey: '3 - 4', numberOfThings: 3},VGB: {fillKey: '3 - 4', numberOfThings: 4},VIR: {fillKey: '5 - 6', numberOfThings: 5},VNM: {fillKey: '3 - 4', numberOfThings: 4},VUT: {fillKey: '1 - 2', numberOfThings: 2},WLF: {fillKey: '1 - 2', numberOfThings: 2},WSM: {fillKey: '9 - 11', numberOfThings: 9},YEM: {fillKey: '3 - 4', numberOfThings: 3},ZAF: {fillKey: '1 - 2', numberOfThings: 2},ZMB: {fillKey: '3 - 4', numberOfThings: 3},ZWE: {fillKey: '3 - 4', numberOfThings: 3}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_5 = []
+    						if (bubbles_map_5.length > 0) {
+    							map_map_5.bubbles(bubbles_map_5, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_5.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with custom fills</h3>
+  <div class='map'>
+    				<div id="map_6" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_6 = new Datamap({
+    							element: document.getElementById("map_6")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#cfc','15 - 18': '#9f9','19 - 23': '#6f6','24 - 27': '#3f3','28 - 32': '#0f0'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_6 = []
+    						if (bubbles_map_6.length > 0) {
+    							map_map_6.bubbles(bubbles_map_6, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_6.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with default fill</h3>
+  <div class='map'>
+    				<div id="map_7" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_7 = new Datamap({
+    							element: document.getElementById("map_7")
+    							, scope: 'world'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#000','1 - 2': '#fcc','3 - 4': '#f99','5 - 6': '#f66','7 - 8': '#f33','9 - 11': '#f00'}
+    							, data: {
+    								ABW: {fillKey: '3 - 4', numberOfThings: 3},AFG: {fillKey: '3 - 4', numberOfThings: 3},AGO: {fillKey: '1 - 2', numberOfThings: 2},AIA: {fillKey: '1 - 2', numberOfThings: 2},ALA: {fillKey: '5 - 6', numberOfThings: 6},ALB: {fillKey: '1 - 2', numberOfThings: 2},AND: {fillKey: '3 - 4', numberOfThings: 3},ARE: {fillKey: '3 - 4', numberOfThings: 4},ARG: {fillKey: '3 - 4', numberOfThings: 3},ARM: {fillKey: '5 - 6', numberOfThings: 6},ASM: {fillKey: '1 - 2', numberOfThings: 2},ATA: {fillKey: '5 - 6', numberOfThings: 5},ATF: {fillKey: '3 - 4', numberOfThings: 3},ATG: {fillKey: '3 - 4', numberOfThings: 3},AUS: {fillKey: '5 - 6', numberOfThings: 5},AUT: {fillKey: '1 - 2', numberOfThings: 1},AZE: {fillKey: '1 - 2', numberOfThings: 1},BDI: {fillKey: '1 - 2', numberOfThings: 2},BEL: {fillKey: '1 - 2', numberOfThings: 2},BEN: {fillKey: '5 - 6', numberOfThings: 6},BES: {fillKey: '1 - 2', numberOfThings: 1},BFA: {fillKey: '1 - 2', numberOfThings: 2},BGD: {fillKey: '5 - 6', numberOfThings: 5},BGR: {fillKey: '5 - 6', numberOfThings: 5},BHR: {fillKey: '1 - 2', numberOfThings: 1},BHS: {fillKey: '3 - 4', numberOfThings: 4},BIH: {fillKey: '5 - 6', numberOfThings: 5},BLM: {fillKey: '7 - 8', numberOfThings: 7},BLR: {fillKey: '3 - 4', numberOfThings: 3},BLZ: {fillKey: '3 - 4', numberOfThings: 4},BMU: {fillKey: '3 - 4', numberOfThings: 4},BOL: {fillKey: '1 - 2', numberOfThings: 2},BRA: {fillKey: '3 - 4', numberOfThings: 4},BRB: {fillKey: '1 - 2', numberOfThings: 2},BRN: {fillKey: '5 - 6', numberOfThings: 5},BTN: {fillKey: '5 - 6', numberOfThings: 5},BVT: {fillKey: '3 - 4', numberOfThings: 4},BWA: {fillKey: '1 - 2', numberOfThings: 1},CAF: {fillKey: '3 - 4', numberOfThings: 3},CAN: {fillKey: '1 - 2', numberOfThings: 1},CCK: {fillKey: '5 - 6', numberOfThings: 5},CHE: {fillKey: '5 - 6', numberOfThings: 5},CHL: {fillKey: '3 - 4', numberOfThings: 4},CHN: {fillKey: '1 - 2', numberOfThings: 2},CIV: {fillKey: '1 - 2', numberOfThings: 2},CMR: {fillKey: '3 - 4', numberOfThings: 4},COD: {fillKey: '1 - 2', numberOfThings: 2},COG: {fillKey: '5 - 6', numberOfThings: 6},COK: {fillKey: '5 - 6', numberOfThings: 5},COL: {fillKey: '5 - 6', numberOfThings: 6},COM: {fillKey: '5 - 6', numberOfThings: 6},CPV: {fillKey: '7 - 8', numberOfThings: 8},CRI: {fillKey: '3 - 4', numberOfThings: 4},CUB: {fillKey: '3 - 4', numberOfThings: 4},CUW: {fillKey: '7 - 8', numberOfThings: 8},CXR: {fillKey: '3 - 4', numberOfThings: 3},CYM: {fillKey: '5 - 6', numberOfThings: 6},CYP: {fillKey: '3 - 4', numberOfThings: 3},CZE: {fillKey: '7 - 8', numberOfThings: 8},DEU: {fillKey: '1 - 2', numberOfThings: 2},DJI: {fillKey: '7 - 8', numberOfThings: 7},DMA: {fillKey: '5 - 6', numberOfThings: 5},DNK: {fillKey: '3 - 4', numberOfThings: 4},DOM: {fillKey: '1 - 2', numberOfThings: 2},DZA: {fillKey: '5 - 6', numberOfThings: 6},ECU: {fillKey: '5 - 6', numberOfThings: 6},EGY: {fillKey: '3 - 4', numberOfThings: 3},ERI: {fillKey: '3 - 4', numberOfThings: 4},ESH: {fillKey: '3 - 4', numberOfThings: 3},ESP: {fillKey: '3 - 4', numberOfThings: 3},EST: {fillKey: '5 - 6', numberOfThings: 5},ETH: {fillKey: '3 - 4', numberOfThings: 3},FIN: {fillKey: '3 - 4', numberOfThings: 3},FJI: {fillKey: '1 - 2', numberOfThings: 2},FLK: {fillKey: '5 - 6', numberOfThings: 5},FRA: {fillKey: '1 - 2', numberOfThings: 1},FRO: {fillKey: '5 - 6', numberOfThings: 5},FSM: {fillKey: '5 - 6', numberOfThings: 5},GAB: {fillKey: '3 - 4', numberOfThings: 4},GBR: {fillKey: '3 - 4', numberOfThings: 4},GEO: {fillKey: '1 - 2', numberOfThings: 1},GGY: {fillKey: '1 - 2', numberOfThings: 2},GHA: {fillKey: '5 - 6', numberOfThings: 5},GIB: {fillKey: '9 - 11', numberOfThings: 11},GIN: {fillKey: '3 - 4', numberOfThings: 3},GLP: {fillKey: '3 - 4', numberOfThings: 3},GMB: {fillKey: '5 - 6', numberOfThings: 5},GNB: {fillKey: '7 - 8', numberOfThings: 8},GNQ: {fillKey: '9 - 11', numberOfThings: 9},GRD: {fillKey: '5 - 6', numberOfThings: 6},GRL: {fillKey: '1 - 2', numberOfThings: 2},GTM: {fillKey: '5 - 6', numberOfThings: 5},GUF: {fillKey: '5 - 6', numberOfThings: 6},GUM: {fillKey: '3 - 4', numberOfThings: 4},GUY: {fillKey: '3 - 4', numberOfThings: 4},HKG: {fillKey: '3 - 4', numberOfThings: 3},HMD: {fillKey: '3 - 4', numberOfThings: 4},HND: {fillKey: '3 - 4', numberOfThings: 3},HRV: {fillKey: '5 - 6', numberOfThings: 6},HTI: {fillKey: '1 - 2', numberOfThings: 2},HUN: {fillKey: '1 - 2', numberOfThings: 1},IDN: {fillKey: '7 - 8', numberOfThings: 8},IMN: {fillKey: '5 - 6', numberOfThings: 5},IND: {fillKey: '7 - 8', numberOfThings: 8},IOT: {fillKey: '1 - 2', numberOfThings: 2},IRL: {fillKey: '3 - 4', numberOfThings: 4},IRN: {fillKey: '7 - 8', numberOfThings: 8},IRQ: {fillKey: '3 - 4', numberOfThings: 3},ISL: {fillKey: '3 - 4', numberOfThings: 4},ISR: {fillKey: '3 - 4', numberOfThings: 3},ITA: {fillKey: '1 - 2', numberOfThings: 2},JAM: {fillKey: '9 - 11', numberOfThings: 9},JEY: {fillKey: '5 - 6', numberOfThings: 6},JOR: {fillKey: '3 - 4', numberOfThings: 4},JPN: {fillKey: '5 - 6', numberOfThings: 5},KAZ: {fillKey: '5 - 6', numberOfThings: 6},KEN: {fillKey: '3 - 4', numberOfThings: 3},KGZ: {fillKey: '5 - 6', numberOfThings: 6},KHM: {fillKey: '5 - 6', numberOfThings: 6},KIR: {fillKey: '1 - 2', numberOfThings: 2},KNA: {fillKey: '1 - 2', numberOfThings: 2},KOR: {fillKey: '3 - 4', numberOfThings: 4},KWT: {fillKey: '3 - 4', numberOfThings: 4},LAO: {fillKey: '3 - 4', numberOfThings: 4},LBN: {fillKey: '3 - 4', numberOfThings: 4},LBR: {fillKey: '1 - 2', numberOfThings: 1},LBY: {fillKey: '5 - 6', numberOfThings: 5},LCA: {fillKey: '3 - 4', numberOfThings: 3},LIE: {fillKey: '3 - 4', numberOfThings: 4},LKA: {fillKey: '3 - 4', numberOfThings: 4},LSO: {fillKey: '7 - 8', numberOfThings: 8},LTU: {fillKey: '3 - 4', numberOfThings: 4},LUX: {fillKey: '1 - 2', numberOfThings: 2},LVA: {fillKey: '1 - 2', numberOfThings: 2},MAC: {fillKey: '5 - 6', numberOfThings: 5},MAF: {fillKey: '1 - 2', numberOfThings: 2},MAR: {fillKey: '1 - 2', numberOfThings: 2},MCO: {fillKey: '5 - 6', numberOfThings: 5},MDA: {fillKey: '7 - 8', numberOfThings: 7},MDG: {fillKey: '5 - 6', numberOfThings: 5},MDV: {fillKey: '9 - 11', numberOfThings: 9},MEX: {fillKey: '3 - 4', numberOfThings: 3},MHL: {fillKey: '7 - 8', numberOfThings: 7},MKD: {fillKey: '3 - 4', numberOfThings: 4},MLI: {fillKey: '3 - 4', numberOfThings: 3},MLT: {fillKey: '5 - 6', numberOfThings: 5},MMR: {fillKey: '3 - 4', numberOfThings: 3},MNE: {fillKey: '5 - 6', numberOfThings: 6},MNG: {fillKey: '5 - 6', numberOfThings: 5},MNP: {fillKey: '3 - 4', numberOfThings: 3},MOZ: {fillKey: '5 - 6', numberOfThings: 5},MRT: {fillKey: '1 - 2', numberOfThings: 2},MSR: {fillKey: '3 - 4', numberOfThings: 4},MTQ: {fillKey: '1 - 2', numberOfThings: 2},MUS: {fillKey: '7 - 8', numberOfThings: 7},MWI: {fillKey: '3 - 4', numberOfThings: 3},MYS: {fillKey: '3 - 4', numberOfThings: 4},MYT: {fillKey: '1 - 2', numberOfThings: 1},NAM: {fillKey: '3 - 4', numberOfThings: 3},NCL: {fillKey: '3 - 4', numberOfThings: 3},NER: {fillKey: '1 - 2', numberOfThings: 2},NFK: {fillKey: '5 - 6', numberOfThings: 5},NGA: {fillKey: '5 - 6', numberOfThings: 6},NIC: {fillKey: '1 - 2', numberOfThings: 1},NIU: {fillKey: '5 - 6', numberOfThings: 6},NLD: {fillKey: '3 - 4', numberOfThings: 4},NOR: {fillKey: '1 - 2', numberOfThings: 2},NPL: {fillKey: '7 - 8', numberOfThings: 8},NRU: {fillKey: '5 - 6', numberOfThings: 5},NZL: {fillKey: '3 - 4', numberOfThings: 4},OMN: {fillKey: '1 - 2', numberOfThings: 2},PAK: {fillKey: '1 - 2', numberOfThings: 2},PAN: {fillKey: '3 - 4', numberOfThings: 4},PCN: {fillKey: '9 - 11', numberOfThings: 10},PER: {fillKey: '5 - 6', numberOfThings: 5},PHL: {fillKey: '3 - 4', numberOfThings: 4},PLW: {fillKey: '1 - 2', numberOfThings: 1},PNG: {fillKey: '3 - 4', numberOfThings: 4},POL: {fillKey: '7 - 8', numberOfThings: 8},PRI: {fillKey: '3 - 4', numberOfThings: 4},PRK: {fillKey: '3 - 4', numberOfThings: 4},PRT: {fillKey: '1 - 2', numberOfThings: 2},PRY: {fillKey: '5 - 6', numberOfThings: 6},PSE: {fillKey: '3 - 4', numberOfThings: 4},PYF: {fillKey: '1 - 2', numberOfThings: 1},QAT: {fillKey: '5 - 6', numberOfThings: 5},REU: {fillKey: '3 - 4', numberOfThings: 3},ROU: {fillKey: '5 - 6', numberOfThings: 5},RUS: {fillKey: '1 - 2', numberOfThings: 2},RWA: {fillKey: '3 - 4', numberOfThings: 4},SAU: {fillKey: '3 - 4', numberOfThings: 3},SDN: {fillKey: '5 - 6', numberOfThings: 6},SEN: {fillKey: '1 - 2', numberOfThings: 1},SGP: {fillKey: '3 - 4', numberOfThings: 3},SGS: {fillKey: '5 - 6', numberOfThings: 6},SHN: {fillKey: '3 - 4', numberOfThings: 3},SJM: {fillKey: '3 - 4', numberOfThings: 4},SLB: {fillKey: '3 - 4', numberOfThings: 4},SLE: {fillKey: '3 - 4', numberOfThings: 3},SLV: {fillKey: '1 - 2', numberOfThings: 2},SMR: {fillKey: '1 - 2', numberOfThings: 2},SOM: {fillKey: '5 - 6', numberOfThings: 6},SPM: {fillKey: '7 - 8', numberOfThings: 8},SRB: {fillKey: '1 - 2', numberOfThings: 1},SSD: {fillKey: '7 - 8', numberOfThings: 7},STP: {fillKey: '5 - 6', numberOfThings: 5},SUR: {fillKey: '3 - 4', numberOfThings: 3},SVK: {fillKey: '1 - 2', numberOfThings: 2},SVN: {fillKey: '3 - 4', numberOfThings: 3},SWE: {fillKey: '7 - 8', numberOfThings: 7},SWZ: {fillKey: '5 - 6', numberOfThings: 5},SXM: {fillKey: '3 - 4', numberOfThings: 3},SYC: {fillKey: '3 - 4', numberOfThings: 4},SYR: {fillKey: '7 - 8', numberOfThings: 7},TCA: {fillKey: '5 - 6', numberOfThings: 5},TCD: {fillKey: '9 - 11', numberOfThings: 9},TGO: {fillKey: '1 - 2', numberOfThings: 1},THA: {fillKey: '3 - 4', numberOfThings: 4},TJK: {fillKey: '3 - 4', numberOfThings: 3},TKL: {fillKey: '5 - 6', numberOfThings: 6},TKM: {fillKey: '5 - 6', numberOfThings: 5},TLS: {fillKey: '5 - 6', numberOfThings: 5},TON: {fillKey: '1 - 2', numberOfThings: 1},TTO: {fillKey: '3 - 4', numberOfThings: 4},TUN: {fillKey: '5 - 6', numberOfThings: 6},TUR: {fillKey: '3 - 4', numberOfThings: 3},TUV: {fillKey: '5 - 6', numberOfThings: 6},TWN: {fillKey: '1 - 2', numberOfThings: 2},TZA: {fillKey: '3 - 4', numberOfThings: 3},UGA: {fillKey: '1 - 2', numberOfThings: 1},UKR: {fillKey: '1 - 2', numberOfThings: 2},UMI: {fillKey: '3 - 4', numberOfThings: 3},URY: {fillKey: '3 - 4', numberOfThings: 3},USA: {fillKey: '5 - 6', numberOfThings: 6},UZB: {fillKey: '3 - 4', numberOfThings: 4},VAT: {fillKey: '3 - 4', numberOfThings: 4},VCT: {fillKey: '1 - 2', numberOfThings: 2},VEN: {fillKey: '3 - 4', numberOfThings: 3},VGB: {fillKey: '3 - 4', numberOfThings: 4},VIR: {fillKey: '5 - 6', numberOfThings: 5},VNM: {fillKey: '3 - 4', numberOfThings: 4},VUT: {fillKey: '1 - 2', numberOfThings: 2},WLF: {fillKey: '1 - 2', numberOfThings: 2},WSM: {fillKey: '9 - 11', numberOfThings: 9},YEM: {fillKey: '3 - 4', numberOfThings: 3},ZAF: {fillKey: '1 - 2', numberOfThings: 2},ZMB: {fillKey: '3 - 4', numberOfThings: 3},ZWE: {fillKey: '3 - 4', numberOfThings: 3}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_7 = []
+    						if (bubbles_map_7.length > 0) {
+    							map_map_7.bubbles(bubbles_map_7, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_7.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with click event (location)</h3>
+  <div class='map'>
+    				<div id="map_8" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_8 = new Datamap({
+    							element: document.getElementById("map_8")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+    					location = '/state/' + geography.properties.name.toLowerCase()
+    				})
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_8 = []
+    						if (bubbles_map_8.length > 0) {
+    							map_map_8.bubbles(bubbles_map_8, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_8.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with custom popup</h3>
+  <div class='map'>
+    				<div id="map_9" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_9 = new Datamap({
+    							element: document.getElementById("map_9")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_9 = []
+    						if (bubbles_map_9.length > 0) {
+    							map_map_9.bubbles(bubbles_map_9, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_9.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with Antarctica (not working)</h3>
+  <div class='map'>
+    				<div id="map_10" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_10 = new Datamap({
+    							element: document.getElementById("map_10")
+    							, scope: 'world'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','1 - 2': '#fcc','3 - 4': '#f99','5 - 6': '#f66','7 - 8': '#f33','9 - 11': '#f00'}
+    							, data: {
+    								ABW: {fillKey: '3 - 4', numberOfThings: 3},AFG: {fillKey: '3 - 4', numberOfThings: 3},AGO: {fillKey: '1 - 2', numberOfThings: 2},AIA: {fillKey: '1 - 2', numberOfThings: 2},ALA: {fillKey: '5 - 6', numberOfThings: 6},ALB: {fillKey: '1 - 2', numberOfThings: 2},AND: {fillKey: '3 - 4', numberOfThings: 3},ARE: {fillKey: '3 - 4', numberOfThings: 4},ARG: {fillKey: '3 - 4', numberOfThings: 3},ARM: {fillKey: '5 - 6', numberOfThings: 6},ASM: {fillKey: '1 - 2', numberOfThings: 2},ATA: {fillKey: '5 - 6', numberOfThings: 5},ATF: {fillKey: '3 - 4', numberOfThings: 3},ATG: {fillKey: '3 - 4', numberOfThings: 3},AUS: {fillKey: '5 - 6', numberOfThings: 5},AUT: {fillKey: '1 - 2', numberOfThings: 1},AZE: {fillKey: '1 - 2', numberOfThings: 1},BDI: {fillKey: '1 - 2', numberOfThings: 2},BEL: {fillKey: '1 - 2', numberOfThings: 2},BEN: {fillKey: '5 - 6', numberOfThings: 6},BES: {fillKey: '1 - 2', numberOfThings: 1},BFA: {fillKey: '1 - 2', numberOfThings: 2},BGD: {fillKey: '5 - 6', numberOfThings: 5},BGR: {fillKey: '5 - 6', numberOfThings: 5},BHR: {fillKey: '1 - 2', numberOfThings: 1},BHS: {fillKey: '3 - 4', numberOfThings: 4},BIH: {fillKey: '5 - 6', numberOfThings: 5},BLM: {fillKey: '7 - 8', numberOfThings: 7},BLR: {fillKey: '3 - 4', numberOfThings: 3},BLZ: {fillKey: '3 - 4', numberOfThings: 4},BMU: {fillKey: '3 - 4', numberOfThings: 4},BOL: {fillKey: '1 - 2', numberOfThings: 2},BRA: {fillKey: '3 - 4', numberOfThings: 4},BRB: {fillKey: '1 - 2', numberOfThings: 2},BRN: {fillKey: '5 - 6', numberOfThings: 5},BTN: {fillKey: '5 - 6', numberOfThings: 5},BVT: {fillKey: '3 - 4', numberOfThings: 4},BWA: {fillKey: '1 - 2', numberOfThings: 1},CAF: {fillKey: '3 - 4', numberOfThings: 3},CAN: {fillKey: '1 - 2', numberOfThings: 1},CCK: {fillKey: '5 - 6', numberOfThings: 5},CHE: {fillKey: '5 - 6', numberOfThings: 5},CHL: {fillKey: '3 - 4', numberOfThings: 4},CHN: {fillKey: '1 - 2', numberOfThings: 2},CIV: {fillKey: '1 - 2', numberOfThings: 2},CMR: {fillKey: '3 - 4', numberOfThings: 4},COD: {fillKey: '1 - 2', numberOfThings: 2},COG: {fillKey: '5 - 6', numberOfThings: 6},COK: {fillKey: '5 - 6', numberOfThings: 5},COL: {fillKey: '5 - 6', numberOfThings: 6},COM: {fillKey: '5 - 6', numberOfThings: 6},CPV: {fillKey: '7 - 8', numberOfThings: 8},CRI: {fillKey: '3 - 4', numberOfThings: 4},CUB: {fillKey: '3 - 4', numberOfThings: 4},CUW: {fillKey: '7 - 8', numberOfThings: 8},CXR: {fillKey: '3 - 4', numberOfThings: 3},CYM: {fillKey: '5 - 6', numberOfThings: 6},CYP: {fillKey: '3 - 4', numberOfThings: 3},CZE: {fillKey: '7 - 8', numberOfThings: 8},DEU: {fillKey: '1 - 2', numberOfThings: 2},DJI: {fillKey: '7 - 8', numberOfThings: 7},DMA: {fillKey: '5 - 6', numberOfThings: 5},DNK: {fillKey: '3 - 4', numberOfThings: 4},DOM: {fillKey: '1 - 2', numberOfThings: 2},DZA: {fillKey: '5 - 6', numberOfThings: 6},ECU: {fillKey: '5 - 6', numberOfThings: 6},EGY: {fillKey: '3 - 4', numberOfThings: 3},ERI: {fillKey: '3 - 4', numberOfThings: 4},ESH: {fillKey: '3 - 4', numberOfThings: 3},ESP: {fillKey: '3 - 4', numberOfThings: 3},EST: {fillKey: '5 - 6', numberOfThings: 5},ETH: {fillKey: '3 - 4', numberOfThings: 3},FIN: {fillKey: '3 - 4', numberOfThings: 3},FJI: {fillKey: '1 - 2', numberOfThings: 2},FLK: {fillKey: '5 - 6', numberOfThings: 5},FRA: {fillKey: '1 - 2', numberOfThings: 1},FRO: {fillKey: '5 - 6', numberOfThings: 5},FSM: {fillKey: '5 - 6', numberOfThings: 5},GAB: {fillKey: '3 - 4', numberOfThings: 4},GBR: {fillKey: '3 - 4', numberOfThings: 4},GEO: {fillKey: '1 - 2', numberOfThings: 1},GGY: {fillKey: '1 - 2', numberOfThings: 2},GHA: {fillKey: '5 - 6', numberOfThings: 5},GIB: {fillKey: '9 - 11', numberOfThings: 11},GIN: {fillKey: '3 - 4', numberOfThings: 3},GLP: {fillKey: '3 - 4', numberOfThings: 3},GMB: {fillKey: '5 - 6', numberOfThings: 5},GNB: {fillKey: '7 - 8', numberOfThings: 8},GNQ: {fillKey: '9 - 11', numberOfThings: 9},GRD: {fillKey: '5 - 6', numberOfThings: 6},GRL: {fillKey: '1 - 2', numberOfThings: 2},GTM: {fillKey: '5 - 6', numberOfThings: 5},GUF: {fillKey: '5 - 6', numberOfThings: 6},GUM: {fillKey: '3 - 4', numberOfThings: 4},GUY: {fillKey: '3 - 4', numberOfThings: 4},HKG: {fillKey: '3 - 4', numberOfThings: 3},HMD: {fillKey: '3 - 4', numberOfThings: 4},HND: {fillKey: '3 - 4', numberOfThings: 3},HRV: {fillKey: '5 - 6', numberOfThings: 6},HTI: {fillKey: '1 - 2', numberOfThings: 2},HUN: {fillKey: '1 - 2', numberOfThings: 1},IDN: {fillKey: '7 - 8', numberOfThings: 8},IMN: {fillKey: '5 - 6', numberOfThings: 5},IND: {fillKey: '7 - 8', numberOfThings: 8},IOT: {fillKey: '1 - 2', numberOfThings: 2},IRL: {fillKey: '3 - 4', numberOfThings: 4},IRN: {fillKey: '7 - 8', numberOfThings: 8},IRQ: {fillKey: '3 - 4', numberOfThings: 3},ISL: {fillKey: '3 - 4', numberOfThings: 4},ISR: {fillKey: '3 - 4', numberOfThings: 3},ITA: {fillKey: '1 - 2', numberOfThings: 2},JAM: {fillKey: '9 - 11', numberOfThings: 9},JEY: {fillKey: '5 - 6', numberOfThings: 6},JOR: {fillKey: '3 - 4', numberOfThings: 4},JPN: {fillKey: '5 - 6', numberOfThings: 5},KAZ: {fillKey: '5 - 6', numberOfThings: 6},KEN: {fillKey: '3 - 4', numberOfThings: 3},KGZ: {fillKey: '5 - 6', numberOfThings: 6},KHM: {fillKey: '5 - 6', numberOfThings: 6},KIR: {fillKey: '1 - 2', numberOfThings: 2},KNA: {fillKey: '1 - 2', numberOfThings: 2},KOR: {fillKey: '3 - 4', numberOfThings: 4},KWT: {fillKey: '3 - 4', numberOfThings: 4},LAO: {fillKey: '3 - 4', numberOfThings: 4},LBN: {fillKey: '3 - 4', numberOfThings: 4},LBR: {fillKey: '1 - 2', numberOfThings: 1},LBY: {fillKey: '5 - 6', numberOfThings: 5},LCA: {fillKey: '3 - 4', numberOfThings: 3},LIE: {fillKey: '3 - 4', numberOfThings: 4},LKA: {fillKey: '3 - 4', numberOfThings: 4},LSO: {fillKey: '7 - 8', numberOfThings: 8},LTU: {fillKey: '3 - 4', numberOfThings: 4},LUX: {fillKey: '1 - 2', numberOfThings: 2},LVA: {fillKey: '1 - 2', numberOfThings: 2},MAC: {fillKey: '5 - 6', numberOfThings: 5},MAF: {fillKey: '1 - 2', numberOfThings: 2},MAR: {fillKey: '1 - 2', numberOfThings: 2},MCO: {fillKey: '5 - 6', numberOfThings: 5},MDA: {fillKey: '7 - 8', numberOfThings: 7},MDG: {fillKey: '5 - 6', numberOfThings: 5},MDV: {fillKey: '9 - 11', numberOfThings: 9},MEX: {fillKey: '3 - 4', numberOfThings: 3},MHL: {fillKey: '7 - 8', numberOfThings: 7},MKD: {fillKey: '3 - 4', numberOfThings: 4},MLI: {fillKey: '3 - 4', numberOfThings: 3},MLT: {fillKey: '5 - 6', numberOfThings: 5},MMR: {fillKey: '3 - 4', numberOfThings: 3},MNE: {fillKey: '5 - 6', numberOfThings: 6},MNG: {fillKey: '5 - 6', numberOfThings: 5},MNP: {fillKey: '3 - 4', numberOfThings: 3},MOZ: {fillKey: '5 - 6', numberOfThings: 5},MRT: {fillKey: '1 - 2', numberOfThings: 2},MSR: {fillKey: '3 - 4', numberOfThings: 4},MTQ: {fillKey: '1 - 2', numberOfThings: 2},MUS: {fillKey: '7 - 8', numberOfThings: 7},MWI: {fillKey: '3 - 4', numberOfThings: 3},MYS: {fillKey: '3 - 4', numberOfThings: 4},MYT: {fillKey: '1 - 2', numberOfThings: 1},NAM: {fillKey: '3 - 4', numberOfThings: 3},NCL: {fillKey: '3 - 4', numberOfThings: 3},NER: {fillKey: '1 - 2', numberOfThings: 2},NFK: {fillKey: '5 - 6', numberOfThings: 5},NGA: {fillKey: '5 - 6', numberOfThings: 6},NIC: {fillKey: '1 - 2', numberOfThings: 1},NIU: {fillKey: '5 - 6', numberOfThings: 6},NLD: {fillKey: '3 - 4', numberOfThings: 4},NOR: {fillKey: '1 - 2', numberOfThings: 2},NPL: {fillKey: '7 - 8', numberOfThings: 8},NRU: {fillKey: '5 - 6', numberOfThings: 5},NZL: {fillKey: '3 - 4', numberOfThings: 4},OMN: {fillKey: '1 - 2', numberOfThings: 2},PAK: {fillKey: '1 - 2', numberOfThings: 2},PAN: {fillKey: '3 - 4', numberOfThings: 4},PCN: {fillKey: '9 - 11', numberOfThings: 10},PER: {fillKey: '5 - 6', numberOfThings: 5},PHL: {fillKey: '3 - 4', numberOfThings: 4},PLW: {fillKey: '1 - 2', numberOfThings: 1},PNG: {fillKey: '3 - 4', numberOfThings: 4},POL: {fillKey: '7 - 8', numberOfThings: 8},PRI: {fillKey: '3 - 4', numberOfThings: 4},PRK: {fillKey: '3 - 4', numberOfThings: 4},PRT: {fillKey: '1 - 2', numberOfThings: 2},PRY: {fillKey: '5 - 6', numberOfThings: 6},PSE: {fillKey: '3 - 4', numberOfThings: 4},PYF: {fillKey: '1 - 2', numberOfThings: 1},QAT: {fillKey: '5 - 6', numberOfThings: 5},REU: {fillKey: '3 - 4', numberOfThings: 3},ROU: {fillKey: '5 - 6', numberOfThings: 5},RUS: {fillKey: '1 - 2', numberOfThings: 2},RWA: {fillKey: '3 - 4', numberOfThings: 4},SAU: {fillKey: '3 - 4', numberOfThings: 3},SDN: {fillKey: '5 - 6', numberOfThings: 6},SEN: {fillKey: '1 - 2', numberOfThings: 1},SGP: {fillKey: '3 - 4', numberOfThings: 3},SGS: {fillKey: '5 - 6', numberOfThings: 6},SHN: {fillKey: '3 - 4', numberOfThings: 3},SJM: {fillKey: '3 - 4', numberOfThings: 4},SLB: {fillKey: '3 - 4', numberOfThings: 4},SLE: {fillKey: '3 - 4', numberOfThings: 3},SLV: {fillKey: '1 - 2', numberOfThings: 2},SMR: {fillKey: '1 - 2', numberOfThings: 2},SOM: {fillKey: '5 - 6', numberOfThings: 6},SPM: {fillKey: '7 - 8', numberOfThings: 8},SRB: {fillKey: '1 - 2', numberOfThings: 1},SSD: {fillKey: '7 - 8', numberOfThings: 7},STP: {fillKey: '5 - 6', numberOfThings: 5},SUR: {fillKey: '3 - 4', numberOfThings: 3},SVK: {fillKey: '1 - 2', numberOfThings: 2},SVN: {fillKey: '3 - 4', numberOfThings: 3},SWE: {fillKey: '7 - 8', numberOfThings: 7},SWZ: {fillKey: '5 - 6', numberOfThings: 5},SXM: {fillKey: '3 - 4', numberOfThings: 3},SYC: {fillKey: '3 - 4', numberOfThings: 4},SYR: {fillKey: '7 - 8', numberOfThings: 7},TCA: {fillKey: '5 - 6', numberOfThings: 5},TCD: {fillKey: '9 - 11', numberOfThings: 9},TGO: {fillKey: '1 - 2', numberOfThings: 1},THA: {fillKey: '3 - 4', numberOfThings: 4},TJK: {fillKey: '3 - 4', numberOfThings: 3},TKL: {fillKey: '5 - 6', numberOfThings: 6},TKM: {fillKey: '5 - 6', numberOfThings: 5},TLS: {fillKey: '5 - 6', numberOfThings: 5},TON: {fillKey: '1 - 2', numberOfThings: 1},TTO: {fillKey: '3 - 4', numberOfThings: 4},TUN: {fillKey: '5 - 6', numberOfThings: 6},TUR: {fillKey: '3 - 4', numberOfThings: 3},TUV: {fillKey: '5 - 6', numberOfThings: 6},TWN: {fillKey: '1 - 2', numberOfThings: 2},TZA: {fillKey: '3 - 4', numberOfThings: 3},UGA: {fillKey: '1 - 2', numberOfThings: 1},UKR: {fillKey: '1 - 2', numberOfThings: 2},UMI: {fillKey: '3 - 4', numberOfThings: 3},URY: {fillKey: '3 - 4', numberOfThings: 3},USA: {fillKey: '5 - 6', numberOfThings: 6},UZB: {fillKey: '3 - 4', numberOfThings: 4},VAT: {fillKey: '3 - 4', numberOfThings: 4},VCT: {fillKey: '1 - 2', numberOfThings: 2},VEN: {fillKey: '3 - 4', numberOfThings: 3},VGB: {fillKey: '3 - 4', numberOfThings: 4},VIR: {fillKey: '5 - 6', numberOfThings: 5},VNM: {fillKey: '3 - 4', numberOfThings: 4},VUT: {fillKey: '1 - 2', numberOfThings: 2},WLF: {fillKey: '1 - 2', numberOfThings: 2},WSM: {fillKey: '9 - 11', numberOfThings: 9},YEM: {fillKey: '3 - 4', numberOfThings: 3},ZAF: {fillKey: '1 - 2', numberOfThings: 2},ZMB: {fillKey: '3 - 4', numberOfThings: 3},ZWE: {fillKey: '3 - 4', numberOfThings: 3}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_10 = []
+    						if (bubbles_map_10.length > 0) {
+    							map_map_10.bubbles(bubbles_map_10, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_10.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with custom border</h3>
+  <div class='map'>
+    				<div id="map_11" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_11 = new Datamap({
+    							element: document.getElementById("map_11")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 3
+    								, borderColor: '#000'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_11 = []
+    						if (bubbles_map_11.length > 0) {
+    							map_map_11.bubbles(bubbles_map_11, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_11.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with no popover (not working)</h3>
+  <div class='map'>
+    				<div id="map_12" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_12 = new Datamap({
+    							element: document.getElementById("map_12")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_12 = []
+    						if (bubbles_map_12.length > 0) {
+    							map_map_12.bubbles(bubbles_map_12, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_12.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with no highlight (not working)</h3>
+  <div class='map'>
+    				<div id="map_13" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_13 = new Datamap({
+    							element: document.getElementById("map_13")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_13 = []
+    						if (bubbles_map_13.length > 0) {
+    							map_map_13.bubbles(bubbles_map_13, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_13.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with custom highlight</h3>
+  <div class='map'>
+    				<div id="map_14" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_14 = new Datamap({
+    							element: document.getElementById("map_14")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: '#000'
+    								, highlightBorderWidth: 5
+    							}
+    						})
+    
+    						var bubbles_map_14 = []
+    						if (bubbles_map_14.length > 0) {
+    							map_map_14.bubbles(bubbles_map_14, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_14.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Bubble map with no options</h3>
+  <div class='map'>
+    				<div id="map_15" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_15 = new Datamap({
+    							element: document.getElementById("map_15")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_15 = [{radius: 10.0,latitude: 42.0,longitude: -82.0,name: 'Granville'},{radius: 14.444444444444445,latitude: 46.0,longitude: -101.0,name: 'Alexis'},{radius: 22.307692307692307,latitude: 32.0,longitude: -70.0,name: 'Lolita'},{radius: 15.714285714285714,latitude: 47.0,longitude: -77.0,name: 'Freida'},{radius: 11.904761904761905,latitude: 46.0,longitude: -90.0,name: 'Marlon'},{radius: 17.61904761904762,latitude: 45.0,longitude: -122.0,name: 'Stacy'},{radius: 15.714285714285714,latitude: 48.0,longitude: -75.0,name: 'Alyson'},{radius: 13.80952380952381,latitude: 40.0,longitude: -76.0,name: 'Roman'},{radius: 15.714285714285714,latitude: 36.0,longitude: -85.0,name: 'Makayla'},{radius: 15.714285714285714,latitude: 43.0,longitude: -102.0,name: 'Sam'},{radius: 17.61904761904762,latitude: 34.0,longitude: -101.0,name: 'Rubie'},{radius: 13.80952380952381,latitude: 30.0,longitude: -101.0,name: 'Sheldon'},{radius: 11.904761904761905,latitude: 38.0,longitude: -110.0,name: 'Erik'},{radius: 15.714285714285714,latitude: 38.0,longitude: -89.0,name: 'Jennyfer'},{radius: 11.904761904761905,latitude: 39.0,longitude: -84.0,name: 'Austen'},{radius: 15.714285714285714,latitude: 33.0,longitude: -119.0,name: 'Brandy'},{radius: 13.80952380952381,latitude: 36.0,longitude: -109.0,name: 'Blanche'},{radius: 10.0,latitude: 38.0,longitude: -108.0,name: 'Liliane'},{radius: 12.0,latitude: 40.0,longitude: -73.0,name: 'Melba'},{radius: 10.0,latitude: 35.0,longitude: -124.0,name: 'Leanna'}]
+    						if (bubbles_map_15.length > 0) {
+    							map_map_15.bubbles(bubbles_map_15, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_15.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Bubble map with custom popup</h3>
+  <div class='map'>
+    				<div id="map_16" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_16 = new Datamap({
+    							element: document.getElementById("map_16")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_16 = [{radius: 10.0,latitude: 42.0,longitude: -82.0,name: 'Granville'},{radius: 23.333333333333332,latitude: 46.0,longitude: -101.0,name: 'Alexis'},{radius: 46.92307692307693,latitude: 32.0,longitude: -70.0,name: 'Lolita'},{radius: 15.555555555555555,latitude: 47.0,longitude: -77.0,name: 'Freida'},{radius: 11.11111111111111,latitude: 46.0,longitude: -90.0,name: 'Marlon'},{radius: 17.77777777777778,latitude: 45.0,longitude: -122.0,name: 'Stacy'},{radius: 15.555555555555555,latitude: 48.0,longitude: -75.0,name: 'Alyson'},{radius: 13.333333333333332,latitude: 40.0,longitude: -76.0,name: 'Roman'},{radius: 15.555555555555555,latitude: 36.0,longitude: -85.0,name: 'Makayla'},{radius: 15.555555555555555,latitude: 43.0,longitude: -102.0,name: 'Sam'},{radius: 17.77777777777778,latitude: 34.0,longitude: -101.0,name: 'Rubie'},{radius: 13.333333333333332,latitude: 30.0,longitude: -101.0,name: 'Sheldon'},{radius: 11.11111111111111,latitude: 38.0,longitude: -110.0,name: 'Erik'},{radius: 15.555555555555555,latitude: 38.0,longitude: -89.0,name: 'Jennyfer'},{radius: 11.11111111111111,latitude: 39.0,longitude: -84.0,name: 'Austen'},{radius: 15.555555555555555,latitude: 33.0,longitude: -119.0,name: 'Brandy'},{radius: 13.333333333333332,latitude: 36.0,longitude: -109.0,name: 'Blanche'},{radius: 10.0,latitude: 38.0,longitude: -108.0,name: 'Liliane'},{radius: 12.222222222222221,latitude: 40.0,longitude: -73.0,name: 'Melba'},{radius: 10.0,latitude: 35.0,longitude: -124.0,name: 'Leanna'}]
+    						if (bubbles_map_16.length > 0) {
+    							map_map_16.bubbles(bubbles_map_16, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', '<h3>' + data.name + '</h3>', '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_16.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Bubble map with custom bubble</h3>
+  <div class='map'>
+    				<div id="map_17" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_17 = new Datamap({
+    							element: document.getElementById("map_17")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_17 = [{radius: 10.0,latitude: 42.0,longitude: -82.0,name: 'Granville'},{radius: 24.444444444444443,latitude: 46.0,longitude: -101.0,name: 'Alexis'},{radius: 50.0,latitude: 32.0,longitude: -70.0,name: 'Lolita'},{radius: 15.0,latitude: 47.0,longitude: -77.0,name: 'Freida'},{radius: 11.0,latitude: 46.0,longitude: -90.0,name: 'Marlon'},{radius: 17.0,latitude: 45.0,longitude: -122.0,name: 'Stacy'},{radius: 15.0,latitude: 48.0,longitude: -75.0,name: 'Alyson'},{radius: 13.0,latitude: 40.0,longitude: -76.0,name: 'Roman'},{radius: 15.0,latitude: 36.0,longitude: -85.0,name: 'Makayla'},{radius: 15.0,latitude: 43.0,longitude: -102.0,name: 'Sam'},{radius: 17.0,latitude: 34.0,longitude: -101.0,name: 'Rubie'},{radius: 13.0,latitude: 30.0,longitude: -101.0,name: 'Sheldon'},{radius: 11.0,latitude: 38.0,longitude: -110.0,name: 'Erik'},{radius: 15.0,latitude: 38.0,longitude: -89.0,name: 'Jennyfer'},{radius: 11.0,latitude: 39.0,longitude: -84.0,name: 'Austen'},{radius: 15.0,latitude: 33.0,longitude: -119.0,name: 'Brandy'},{radius: 13.0,latitude: 36.0,longitude: -109.0,name: 'Blanche'},{radius: 10.0,latitude: 38.0,longitude: -108.0,name: 'Liliane'},{radius: 12.0,latitude: 40.0,longitude: -73.0,name: 'Melba'},{radius: 10.0,latitude: 35.0,longitude: -124.0,name: 'Leanna'}]
+    						if (bubbles_map_17.length > 0) {
+    							map_map_17.bubbles(bubbles_map_17, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 5
+    								, borderColor: '#000'
+    								, popupOnHover: true
+    								, fillOpacity: 0.5
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_17.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Bubble map with no popup</h3>
+  <div class='map'>
+    				<div id="map_18" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_18 = new Datamap({
+    							element: document.getElementById("map_18")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_18 = [{radius: 10.0,latitude: 42.0,longitude: -82.0,name: 'Granville'},{radius: 24.0,latitude: 46.0,longitude: -101.0,name: 'Alexis'},{radius: 50.0,latitude: 32.0,longitude: -70.0,name: 'Lolita'},{radius: 15.0,latitude: 47.0,longitude: -77.0,name: 'Freida'},{radius: 11.0,latitude: 46.0,longitude: -90.0,name: 'Marlon'},{radius: 17.0,latitude: 45.0,longitude: -122.0,name: 'Stacy'},{radius: 15.0,latitude: 48.0,longitude: -75.0,name: 'Alyson'},{radius: 13.0,latitude: 40.0,longitude: -76.0,name: 'Roman'},{radius: 15.0,latitude: 36.0,longitude: -85.0,name: 'Makayla'},{radius: 15.0,latitude: 43.0,longitude: -102.0,name: 'Sam'},{radius: 17.0,latitude: 34.0,longitude: -101.0,name: 'Rubie'},{radius: 13.0,latitude: 30.0,longitude: -101.0,name: 'Sheldon'},{radius: 11.0,latitude: 38.0,longitude: -110.0,name: 'Erik'},{radius: 15.0,latitude: 38.0,longitude: -89.0,name: 'Jennyfer'},{radius: 11.0,latitude: 39.0,longitude: -84.0,name: 'Austen'},{radius: 15.0,latitude: 33.0,longitude: -119.0,name: 'Brandy'},{radius: 13.0,latitude: 36.0,longitude: -109.0,name: 'Blanche'},{radius: 10.0,latitude: 38.0,longitude: -108.0,name: 'Liliane'},{radius: 12.0,latitude: 40.0,longitude: -73.0,name: 'Melba'},{radius: 10.0,latitude: 35.0,longitude: -124.0,name: 'Leanna'}]
+    						if (bubbles_map_18.length > 0) {
+    							map_map_18.bubbles(bubbles_map_18, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_18.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Bubble map with custom highlight</h3>
+  <div class='map'>
+    				<div id="map_19" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_19 = new Datamap({
+    							element: document.getElementById("map_19")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_19 = [{radius: 10.0,latitude: 42.0,longitude: -82.0,name: 'Granville'},{radius: 24.0,latitude: 46.0,longitude: -101.0,name: 'Alexis'},{radius: 50.0,latitude: 32.0,longitude: -70.0,name: 'Lolita'},{radius: 15.0,latitude: 47.0,longitude: -77.0,name: 'Freida'},{radius: 11.0,latitude: 46.0,longitude: -90.0,name: 'Marlon'},{radius: 17.0,latitude: 45.0,longitude: -122.0,name: 'Stacy'},{radius: 15.0,latitude: 48.0,longitude: -75.0,name: 'Alyson'},{radius: 13.0,latitude: 40.0,longitude: -76.0,name: 'Roman'},{radius: 15.0,latitude: 36.0,longitude: -85.0,name: 'Makayla'},{radius: 15.0,latitude: 43.0,longitude: -102.0,name: 'Sam'},{radius: 17.0,latitude: 34.0,longitude: -101.0,name: 'Rubie'},{radius: 13.0,latitude: 30.0,longitude: -101.0,name: 'Sheldon'},{radius: 11.0,latitude: 38.0,longitude: -110.0,name: 'Erik'},{radius: 15.0,latitude: 38.0,longitude: -89.0,name: 'Jennyfer'},{radius: 11.0,latitude: 39.0,longitude: -84.0,name: 'Austen'},{radius: 15.0,latitude: 33.0,longitude: -119.0,name: 'Brandy'},{radius: 13.0,latitude: 36.0,longitude: -109.0,name: 'Blanche'},{radius: 10.0,latitude: 38.0,longitude: -108.0,name: 'Liliane'},{radius: 12.0,latitude: 40.0,longitude: -73.0,name: 'Melba'},{radius: 10.0,latitude: 35.0,longitude: -124.0,name: 'Leanna'}]
+    						if (bubbles_map_19.length > 0) {
+    							map_map_19.bubbles(bubbles_map_19, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#0F0'
+    								, highlightBorderColor: '#000'
+    								, highlightBorderWidth: 5
+    								, highlightFillOpacity: 0.5
+    							})
+    						}
+    
+    						if (false){
+    							map_map_19.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Bubble map with no highlight</h3>
+  <div class='map'>
+    				<div id="map_20" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_20 = new Datamap({
+    							element: document.getElementById("map_20")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_20 = [{radius: 10.0,latitude: 42.0,longitude: -82.0,name: 'Granville'},{radius: 24.0,latitude: 46.0,longitude: -101.0,name: 'Alexis'},{radius: 50.0,latitude: 32.0,longitude: -70.0,name: 'Lolita'},{radius: 15.0,latitude: 47.0,longitude: -77.0,name: 'Freida'},{radius: 11.0,latitude: 46.0,longitude: -90.0,name: 'Marlon'},{radius: 17.0,latitude: 45.0,longitude: -122.0,name: 'Stacy'},{radius: 15.0,latitude: 48.0,longitude: -75.0,name: 'Alyson'},{radius: 13.0,latitude: 40.0,longitude: -76.0,name: 'Roman'},{radius: 15.0,latitude: 36.0,longitude: -85.0,name: 'Makayla'},{radius: 15.0,latitude: 43.0,longitude: -102.0,name: 'Sam'},{radius: 17.0,latitude: 34.0,longitude: -101.0,name: 'Rubie'},{radius: 13.0,latitude: 30.0,longitude: -101.0,name: 'Sheldon'},{radius: 11.0,latitude: 38.0,longitude: -110.0,name: 'Erik'},{radius: 15.0,latitude: 38.0,longitude: -89.0,name: 'Jennyfer'},{radius: 11.0,latitude: 39.0,longitude: -84.0,name: 'Austen'},{radius: 15.0,latitude: 33.0,longitude: -119.0,name: 'Brandy'},{radius: 13.0,latitude: 36.0,longitude: -109.0,name: 'Blanche'},{radius: 10.0,latitude: 38.0,longitude: -108.0,name: 'Liliane'},{radius: 12.0,latitude: 40.0,longitude: -73.0,name: 'Melba'},{radius: 10.0,latitude: 35.0,longitude: -124.0,name: 'Leanna'}]
+    						if (bubbles_map_20.length > 0) {
+    							map_map_20.bubbles(bubbles_map_20, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_20.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Bubble map with custom min/max</h3>
+  <div class='map'>
+    				<div id="map_21" style='position: relative;'></div>
+    				<script type="text/javascript">
+    					$(function(){
+    						var map_map_21 = new Datamap({
+    							element: document.getElementById("map_21")
+    							, scope: 'usa'
+    							, projection: 'equirectangular'
+    							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+    							, data: {
+    								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+    							}
+    							, done: function(datamap) {
+    								
+    							}
+    							, geographyConfig: {
+    								popupTemplate: function(geo, data) {
+    									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+    								}
+    								, hideAntarctica: true
+    								, borderWidth: 1
+    								, borderColor: '#FDFDFD'
+    								, popupOnHover: true
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    							}
+    						})
+    
+    						var bubbles_map_21 = [{radius: 5.0,latitude: 42.0,longitude: -82.0,name: 'Granville'},{radius: 45.111111111111114,latitude: 46.0,longitude: -101.0,name: 'Alexis'},{radius: 100.0,latitude: 32.0,longitude: -70.0,name: 'Lolita'},{radius: 15.0,latitude: 47.0,longitude: -77.0,name: 'Freida'},{radius: 11.0,latitude: 46.0,longitude: -90.0,name: 'Marlon'},{radius: 17.0,latitude: 45.0,longitude: -122.0,name: 'Stacy'},{radius: 15.0,latitude: 48.0,longitude: -75.0,name: 'Alyson'},{radius: 13.0,latitude: 40.0,longitude: -76.0,name: 'Roman'},{radius: 15.0,latitude: 36.0,longitude: -85.0,name: 'Makayla'},{radius: 15.0,latitude: 43.0,longitude: -102.0,name: 'Sam'},{radius: 17.0,latitude: 34.0,longitude: -101.0,name: 'Rubie'},{radius: 13.0,latitude: 30.0,longitude: -101.0,name: 'Sheldon'},{radius: 11.0,latitude: 38.0,longitude: -110.0,name: 'Erik'},{radius: 15.0,latitude: 38.0,longitude: -89.0,name: 'Jennyfer'},{radius: 11.0,latitude: 39.0,longitude: -84.0,name: 'Austen'},{radius: 15.0,latitude: 33.0,longitude: -119.0,name: 'Brandy'},{radius: 13.0,latitude: 36.0,longitude: -109.0,name: 'Blanche'},{radius: 10.0,latitude: 38.0,longitude: -108.0,name: 'Liliane'},{radius: 12.0,latitude: 40.0,longitude: -73.0,name: 'Melba'},{radius: 10.0,latitude: 35.0,longitude: -124.0,name: 'Leanna'}]
+    						if (bubbles_map_21.length > 0) {
+    							map_map_21.bubbles(bubbles_map_21, {
+    								popupTemplate: function (geo, data) { 
+    									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+    								}
+    								, borderWidth: 2
+    								, borderColor: '#FFFFFF'
+    								, popupOnHover: true
+    								, fillOpacity: 0.75
+    								, highlightOnHover: true
+    								, highlightFillColor: '#FC8D59'
+    								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+    								, highlightBorderWidth: 2
+    								, highlightFillOpacity: 0.85
+    							})
+    						}
+    
+    						if (false){
+    							map_map_21.legend()
+    						}
+    					})
+    				</script>
+  </div>
+</div>
+<div class='map'>
+  <h3>Map with legend</h3>
+  				<div id="map_22" style='position: relative;'></div>
+  				<script type="text/javascript">
+  					$(function(){
+  						var map_map_22 = new Datamap({
+  							element: document.getElementById("map_22")
+  							, scope: 'usa'
+  							, projection: 'equirectangular'
+  							, fills: {defaultFill: '#ccc','10 - 14': '#fcc','15 - 18': '#f99','19 - 23': '#f66','24 - 27': '#f33','28 - 32': '#f00'}
+  							, data: {
+  								AK: {fillKey: '19 - 23', numberOfThings: 20},AL: {fillKey: '15 - 18', numberOfThings: 17},AR: {fillKey: '15 - 18', numberOfThings: 16},AZ: {fillKey: '24 - 27', numberOfThings: 25},CA: {fillKey: '10 - 14', numberOfThings: 10},CO: {fillKey: '19 - 23', numberOfThings: 21},CT: {fillKey: '19 - 23', numberOfThings: 22},DE: {fillKey: '28 - 32', numberOfThings: 32},FL: {fillKey: '19 - 23', numberOfThings: 22},GA: {fillKey: '19 - 23', numberOfThings: 21},HI: {fillKey: '19 - 23', numberOfThings: 19},IA: {fillKey: '19 - 23', numberOfThings: 20},ID: {fillKey: '15 - 18', numberOfThings: 16},IL: {fillKey: '15 - 18', numberOfThings: 15},IN: {fillKey: '24 - 27', numberOfThings: 24},KS: {fillKey: '15 - 18', numberOfThings: 16},KY: {fillKey: '19 - 23', numberOfThings: 23},LA: {fillKey: '15 - 18', numberOfThings: 17},MA: {fillKey: '24 - 27', numberOfThings: 26},MD: {fillKey: '19 - 23', numberOfThings: 22},ME: {fillKey: '10 - 14', numberOfThings: 14},MI: {fillKey: '24 - 27', numberOfThings: 26},MN: {fillKey: '19 - 23', numberOfThings: 20},MO: {fillKey: '15 - 18', numberOfThings: 15},MS: {fillKey: '19 - 23', numberOfThings: 22},MT: {fillKey: '19 - 23', numberOfThings: 19},NC: {fillKey: '15 - 18', numberOfThings: 17},ND: {fillKey: '15 - 18', numberOfThings: 17},NE: {fillKey: '19 - 23', numberOfThings: 19},NH: {fillKey: '19 - 23', numberOfThings: 21},NJ: {fillKey: '19 - 23', numberOfThings: 20},NM: {fillKey: '15 - 18', numberOfThings: 15},NV: {fillKey: '10 - 14', numberOfThings: 12},NY: {fillKey: '28 - 32', numberOfThings: 29},OH: {fillKey: '15 - 18', numberOfThings: 16},OK: {fillKey: '15 - 18', numberOfThings: 17},OR: {fillKey: '28 - 32', numberOfThings: 30},PA: {fillKey: '15 - 18', numberOfThings: 16},RI: {fillKey: '19 - 23', numberOfThings: 23},SC: {fillKey: '19 - 23', numberOfThings: 22},SD: {fillKey: '19 - 23', numberOfThings: 21},TN: {fillKey: '19 - 23', numberOfThings: 21},TX: {fillKey: '24 - 27', numberOfThings: 26},UT: {fillKey: '19 - 23', numberOfThings: 22},VA: {fillKey: '15 - 18', numberOfThings: 18},VT: {fillKey: '19 - 23', numberOfThings: 20},WA: {fillKey: '15 - 18', numberOfThings: 15},WI: {fillKey: '19 - 23', numberOfThings: 20},WV: {fillKey: '24 - 27', numberOfThings: 26},WY: {fillKey: '15 - 18', numberOfThings: 17}
+  							}
+  							, done: function(datamap) {
+  								
+  							}
+  							, geographyConfig: {
+  								popupTemplate: function(geo, data) {
+  									return ['<div class="hoverinfo">', '<strong>' + geo.properties.name + '<br/><center>' + data.numberOfThings + '</center></strong>', '</div>'].join('')
+  								}
+  								, hideAntarctica: true
+  								, borderWidth: 1
+  								, borderColor: '#FDFDFD'
+  								, popupOnHover: true
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  							}
+  						})
+  
+  						var bubbles_map_22 = []
+  						if (bubbles_map_22.length > 0) {
+  							map_map_22.bubbles(bubbles_map_22, {
+  								popupTemplate: function (geo, data) { 
+  									return ['<div class="hoverinfo">', data.name, '</div>'].join('')
+  								}
+  								, borderWidth: 2
+  								, borderColor: '#FFFFFF'
+  								, popupOnHover: true
+  								, fillOpacity: 0.75
+  								, highlightOnHover: true
+  								, highlightFillColor: '#FC8D59'
+  								, highlightBorderColor: 'rgba(250, 15, 160, 0.2)'
+  								, highlightBorderWidth: 2
+  								, highlightFillOpacity: 0.85
+  							})
+  						}
+  
+  						if (true){
+  							map_map_22.legend()
+  						}
+  					})
+  				</script>
+</div>
+
+
+</body>
+</html>
